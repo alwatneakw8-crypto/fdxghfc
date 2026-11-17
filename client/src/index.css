@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Tajawal", system-ui, -apple-system, sans-serif;
+  --font-serif: "Amiri", Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --background: 36 33% 97%;
+  --foreground: 28 32% 12%;
+
+  --card: 36 30% 99%;
+  --card-foreground: 28 32% 12%;
+  --card-border: 34 22% 88%;
+
+  --popover: 36 30% 99%;
+  --popover-foreground: 28 32% 12%;
+  --popover-border: 34 22% 88%;
+
+  --primary: 35 64% 38%;
+  --primary-foreground: 36 33% 98%;
+  --primary-border: hsl(35 64% 32%);
+
+  --secondary: 34 26% 92%;
+  --secondary-foreground: 28 32% 18%;
+  --secondary-border: hsl(34 22% 84%);
+
+  --muted: 34 20% 93%;
+  --muted-foreground: 28 14% 44%;
+  --muted-border: hsl(34 18% 86%);
+
+  --accent: 38 72% 48%;
+  --accent-foreground: 28 32% 10%;
+  --accent-border: hsl(38 72% 40%);
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 98%;
+  --destructive-border: hsl(0 72% 44%);
+
+  --border: 34 20% 88%;
+  --input: 34 20% 84%;
+  --ring: 35 64% 38%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
